@@ -24,8 +24,12 @@ estão relacionadas diretamente ligadas as outras, podendo repetir a cada módul
 ![image](https://user-images.githubusercontent.com/101153501/213162873-763210e6-b35e-4b51-b431-92a0d4008fac.png)
 
 PROJETOS possui 1:N com ALUNOS;
+
 ALUNOS possui 1:N com CURSOS;
+
 CURSOS possui 1:N com TURMAS;
+
 PROFESSOR possui 1:N CURSOS;
+
 MONITORES possui 1:N com TURMAS;
 
