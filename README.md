@@ -2,25 +2,30 @@
 Modelagem de banco de dados
 
 
-![image](https://user-images.githubusercontent.com/101153501/212988833-a31ea91e-1a58-4ae9-b2a4-d110c977021e.png)
+![image](https://user-images.githubusercontent.com/101153501/213162609-e138463c-0555-408d-9de5-5231691a7963.png)
 
 ⇨ Existem outras entidades além dessas três?
 Sim, Projetos, professores e monitores
 
 ⇨ Quais são os principais campos e tipos?
-Os principais campos são as IDs de cada entidades e Primary keys todas elas 
+Os principais campos são as ID e CPF, e os principais tipos são INT e VARCHAR
 
 ⇨ Como essas entidades estão relacionadas?
 
 # Alunos e Projetos:
 
-![image](https://user-images.githubusercontent.com/101153501/212990508-de65681f-e258-4b68-a223-8940ea007d20.png)
+![image](https://user-images.githubusercontent.com/101153501/213162727-a485f71a-c7be-4129-bb73-758a53f52819.png)
 
 estão relacionadas diretamente ligadas as outras, podendo repetir a cada módulo, pois cada aluno ter aum projeto individual e em grupo em cada módulo.
 
 
 # Professores e Monitores:
 
-![image](https://user-images.githubusercontent.com/101153501/212991328-124deb32-4962-437e-aa26-22c40d069c1a.png)
+![image](https://user-images.githubusercontent.com/101153501/213162873-763210e6-b35e-4b51-b431-92a0d4008fac.png)
 
-Estão diretamente ligadas, pois cada um será responsável pela turma e ajudando diretamente e indiretamente em prol da conclusão do mesmo.
+PROJETOS possui 1:N com ALUNOS;
+ALUNOS possui 1:N com CURSOS;
+CURSOS possui 1:N com TURMAS;
+PROFESSOR possui 1:N CURSOS;
+MONITORES possui 1:N com TURMAS;
+
